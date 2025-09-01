@@ -75,30 +75,33 @@
         <div class="row align-items-center">
 
             <div class="col-12 col-lg-8 ">
-                <form method="post" enctype="application/x-www-form-urlencoded" netlify>
-                    <fieldset class="border rounded-3 p-4  ">
-                        <legend class="float-none w-auto px-2">Dejanos un mensaje!</legend>
-                        <div class="mb-3">
-                            <label class="form-label" for="nombreyapellido">Nombre y Apellido</label>
-                            <input class="form-control" type="text" name="nombreyapellido" id="">
-                        </div>
+               <form name="contacto" method="POST" data-netlify="true" netlify>
+  <input type="hidden" name="form-name" value="contacto">
+  <!-- Honeypot opcional -->
+  <input type="hidden" name="bot-field" />
 
-                        <div class="mb-3">
-                            <label class="form-label" for="correo">Correo electronico</label>
-                            <input class="form-control" type="email" name="correo" id="">
-                        </div>
+  <fieldset class="border rounded-3 p-4">
+    <legend class="float-none w-auto px-2">Dejanos un mensaje!</legend>
 
-                        <div class="mb-3">
-                            <label class=" form-label " for="comentario">Detalla tu comentario a
-                                continuacion</label>
-                            <textarea class="form-control  " name="comentario" id=""></textarea>
-                        </div>
+    <div class="mb-3">
+      <label class="form-label" for="nombreyapellido">Nombre y Apellido</label>
+      <input class="form-control" type="text" id="nombreyapellido" name="nombreyapellido" required>
+    </div>
 
-                        <input class="btn" type="submit" value="ENVIAR NETLIFY"> 
+    <div class="mb-3">
+      <label class="form-label" for="correo">Correo electrónico</label>
+      <input class="form-control" type="email" id="correo" name="correo" required>
+    </div>
 
+    <div class="mb-3">
+      <label class="form-label" for="comentario">Detalla tu comentario a continuación</label>
+      <textarea class="form-control" id="comentario" name="comentario" required></textarea>
+    </div>
 
-                    </fieldset>
-                </form>
+    <input class="btn" type="submit" value="ENVIAR NETLIFY">
+  </fieldset>
+</form>
+
 
 
             </div>
