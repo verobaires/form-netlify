@@ -1,0 +1,445 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Boston Traffic";
+  src: url(../assets/fonts/boston_traffic.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+li > a {
+  color: black; 
+  text-decoration: none; 
+  font-size: 15px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+  color: #dfb88b;
+}
+.marianela {
+  color: #905d23;
+  font-size: 50px;
+  font-weight: 300;
+}
+#fondoPrincipal .heroSection {
+  background-image: url(../assets/img/hero-img.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}
+#fondoPrincipal .heroSection .heroTxt {
+  font-size: 25px;
+  font-weight: 600;
+  font-style: italic;
+  background-color: rgba(247, 205, 155, 0.61);
+  width: 25%;
+  padding: 25px;
+  margin-right: 20px;
+  text-align: center;
+}
+.txtMayuscula {
+  text-transform: uppercase;
+}
+.subrayado {
+  text-decoration: red 4px underline;
+}     
+.logo {
+  width: 64px;
+}
+.logo img {
+  width: 100%;
+}
+header,
+footer {
+  background-color: #f5f5f5;
+}
+header {
+
+  padding: 10px; 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+
+header .navbar div.container-fluid div.offcanvas .encabezado-offcanvas {
+  width: 70%;
+  margin: 0 auto;
+}
+.menu-offcanvas {
+  justify-content: space-around;
+}
+.marianela span {
+  font-weight: 600;
+  color: rgb(187, 161, 16);
+}
+main {
+  text-align: center;
+}
+
+/*----------------------- SOBRE MI ---------------------*/
+section.sobreMi {
+  margin: 5px;
+}
+section.sobreMi .intro {
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+section.sobreMi .intro .introText {
+  width: 40%;
+}
+section.sobreMi .intro .introText h2 {
+  text-align: center;
+}
+section.sobreMi .intro .introText p {
+  text-align: justify;
+}
+section.sobreMi .intro .autoretrato {
+  width: 30%;
+}
+section.sobreMi .intro .beca {
+  width: 40%;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.interlineado {
+  line-height: 2;
+}
+section.sobreMi .intro .introText .tituloBeca {
+  padding: 20px;
+}
+section.sobreMi .intro img.absolute {
+  top: 2px;
+  right: 15px;
+  width: 65px;
+}
+
+/*---------------------------- PORTFOLIO ---------------------------- */
+
+
+.video video {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.criaturasMagicas iframe {
+  width: 100%;
+  height: 50vh;
+}
+.portfolio section {
+  margin: 30px 7px;
+}
+.portfolio h3 {
+  padding: 20px;
+  font-size: 1.5rem;
+}
+
+/*---------------------------- CURSOS ---------------------------------*/
+.cursos h1 {
+  font-size: 3.5rem;
+}
+.cursos .cursosDisponibles {
+  margin: 25px 0;
+  padding: 7px;
+}
+.cursos .cursosDisponibles h2 {
+  font-size: 2.75rem;
+  padding: 10px;
+  margin: 15px 0;
+}
+.cursos .cursosDisponibles .card {
+  
+  border: 1px solid #5c5605;
+  padding: 5px;
+}
+.cursos .cursosDisponibles div h3 {
+  padding: 5px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #aca106;
+}
+
+
+.cursosDisponibles .row {
+  row-gap: 20px;
+  width: 80vw;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.img-ajuste {
+  height: 50%;
+  object-fit: cover;
+}
+.row .col-12:nth-child(7) .card-img-top {
+  object-position: 0 -62px;
+}
+.row .col-12:nth-child(3) .card-img-top {
+  object-position: top;
+}
+
+/* -----------INICIO GRID AREA------------------ */
+.gridArea {
+  display: grid;
+  grid-template-columns: 1.5fr 200px repeat(2, 1.5fr) 3fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas:
+    "tinta_china croquis acuarela acuarela botanica"
+    "tinta_china croquis acuarela acuarela botanica"
+    "procrearte procrearte acuarela acuarela botanica"
+    "procrearte procrearte photoshop photoshop dibujo"
+    "procrearte procrearte photoshop photoshop ilustracion";
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  gap: 10px;
+  position: relative;
+  background-color: #954313d4;
+  padding: 7px;
+}
+
+.gridArea img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  min-height: 0; }
+
+.gridArea .tintaChina {
+  grid-area: tinta_china;
+}
+
+.gridArea .introIlustracion {
+  grid-area: ilustracion;
+  object-position: center top;
+}
+
+.gridArea .croquisArquitectonico {
+  grid-area: croquis;
+}
+
+.gridArea .acuarelaCreativa {
+  grid-area: acuarela;
+  object-position: center;
+}
+
+.gridArea .ilustracionBotanica {
+  grid-area: botanica;
+}
+
+.gridArea .ilustracionDibujo {
+  grid-area: dibujo;
+  object-position: center;
+}
+
+.gridArea .ilustracionProcrearte {
+  grid-area: procrearte;
+}
+
+.gridArea .ilustracionPhotoshop {
+  grid-area: photoshop;
+  border-radius: 50%;
+  width: 400px;
+  height: auto;
+  object-position: 0 8px;
+  position: absolute;
+  background-color: #dfdedd;
+  bottom: 20px;
+  justify-self: center;
+}
+
+
+ .mainContacto form {
+  height: 100%;
+  font-size: 20px;
+}
+
+
+.mainContacto form fieldset legend {
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+.mainContacto form fieldset input {
+  height: 50%;
+  border-radius: 18px;
+  border: 1px solid #bd6e10;
+  box-shadow: 2px 2px 2px #eaa911;
+}
+
+.mainContacto form fieldset textarea {
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid #bd6e10;
+  box-shadow: 2px 2px 2px #eaa911;
+}
+
+.mainContacto form fieldset input[type="submit"] {
+
+  width: 30%; 
+  margin: 0 auto;
+  margin-top: 0px;
+  align-items: center;
+  font-family: "Boston Traffic", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: #ff8300;
+  letter-spacing: 9px;
+  box-shadow: 2px 3px 1px black;
+  border: none;
+  margin-top: 10px;
+}
+
+.mainContacto form fieldset textarea {
+  height: 15vh;
+}
+
+/* ---------------FOOTER--------------------- */
+
+footer {
+  display: grid;
+  grid-template-columns: 0.25fr repeat(3, 1fr) 0.25fr;
+  grid-template-rows: auto; /* se ajusta a contenido */
+  grid-template-areas:
+    ". redes redes redes ."
+    "menu menu menu menu menu"
+    ". . copy . .";
+}
+
+footer .footerRedes {
+  margin: 5px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  align-items: center;
+  grid-area: redes;
+}
+
+footer .footerMenu {
+  margin: 0 auto;
+  width: 100%;
+  grid-area: menu;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.copy {
+  font-size: 15px;
+  text-align: center;
+  grid-area: copy;
+  padding: 15px 0;
+}
+
+.fa-brands {
+  font-size: 30px;
+}
+
+.whatsapp {
+  font-size: 50px;
+  color: green;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+/* RESPONSIVE (se adapta a dispositivos mobiles con enfoque desktop first) */
+@media screen and (max-width: 768px) {
+footer .footerMenu {
+    display: none;
+  }
+ /* CURSOS MOBILE */
+  .cursos .gridArea {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "tinta_china "
+      "croquis "
+      "acuarela "
+      "botanica "
+      "procrearte "
+      "ilustracion "
+      "dibujo";
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    gap: 10px;
+    position: relative;
+  }
+  .gridArea .ilustracionPhotoshop {
+    display: none;
+  }
+/*SACO TODO LO RELACIONADO A GRIDLINES Y GRID LAYOUT PARA VISTA MOBILE */
+
+  .copy {
+    font-size: 10px;
+  }
+
+  .whatsapp {
+    right: 15px;
+    bottom: 40px;
+  }
+  .mainContacto form fieldset input[type="submit"] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+/* INICIO MOBILE*/
+#fondoPrincipal .heroSection {
+    background-position: 50% 160px;
+  }
+
+#fondoPrincipal .heroSection .heroTxt {
+    width: 50%;
+    padding: 5px;
+    font-size: 20px;
+  }
+/* PORTFOLIO MOBILE*/
+  .portfolio .carousel-inner{
+    height: auto;
+  }
+
+ 
+/*SOBRE MI MOBILE*/
+section.sobreMi .intro {
+  flex-direction: column;
+  padding: 35px;
+}
+section.sobreMi .intro .introText {
+  width: auto;
+}
+section.sobreMi .intro .autoretrato, section.sobreMi .intro .beca {
+  width: 100%;
+}
+section.sobreMi .intro img.absolute {
+    top: 60px;
+    right: 30px;    
+}
+
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <script src="https://kit.fontawesome.com/29c3be7601.js" crossorigin="anonymous"></script>
+
+
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+
+
+    <header class="bg-light fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- logo -->
+                <a class="logo navbar-brand" href="../index.html">
+                    <img src="../assets/img/logo_medium.webp" alt="logo Marianela Muller">
+                </a>
+                <!-- boton hamburguesa de offcanvas-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- menu offcanvas -->
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h3 class="offcanvas-title" id="offcanvasNavbarLabel">MENU </h3>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body encabezado-offcanvas">
+                        <ul class="navbar-nav flex-grow-1 pe-3 menu-offcanvas">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sobreMi.html">SOBRE MI</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./portfolio.html">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./cursos.html">CURSOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active subrayado" aria-current="page"
+                                    href="./contacto.html">CONTACTO</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mainContacto container my-5">
+
+        <div class="text-center mb-4">
+            <h1 class="marianela">Cont<span>acto</span></h1>
+        </div>
+
+        <div class="row align-items-center">
+
+            <div class="col-12 col-lg-8 ">
+                <form action="" method="post" enctype="application/x-www-form-urlencoded">
+                    <fieldset class="border rounded-3 p-4  ">
+                        <legend class="float-none w-auto px-2">Dejanos un mensaje!</legend>
+                        <div class="mb-3">
+                            <label class="form-label" for="nombreyapellido">Nombre y Apellido</label>
+                            <input class="form-control" type="text" name="nombreyapellido" id="">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="correo">Correo electronico</label>
+                            <input class="form-control" type="email" name="correo" id="">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class=" form-label " for="comentario">Detalla tu comentario a
+                                continuacion</label>
+                            <textarea class="form-control  " name="comentario" id=""></textarea>
+                        </div>
+
+                        <input class="btn" type="submit" value="ENVIAR"> <!-- saque class=" btn-warning w-100" que vienen del componente -->
+
+                    </fieldset>
+                </form>
+
+
+            </div>
+
+            <div class="col-12 col-lg-4 ">
+                <img class="img-fluid rounded " src="../assets/img/contacto_blancayloscolores.webp"
+                    alt="pintura niña bailando sobre pasto pelo al viento colores calidos ">
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-light fixed-bottom">
+
+        <div class="footerRedes">
+            <a href="https://www.facebook.com/marianelaa.muller/" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/marianelaa.muller/" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/c/MarianelaMullerIlustraci%C3%B3n" target="_blank"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5491134746042" target=""> <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/marianelamullerilustradora/" target=""><i
+                    class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="footerMenu">
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="./sobreMi.html">SOBRE MI</a></li>
+                <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                <li><a href=".cursos.html">CURSOS</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </div>
+        <div><i class="fa-brands fa-whatsapp whatsapp"></i></div>
+        <h6 class="copy">&copy; Marianela Muller</h6>
+
+    </footer>
+
+
+    <!-- script bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
